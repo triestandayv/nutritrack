@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="./bootstrap-5.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-img w-100 d-flex flex-column justify-content-center gap-4 align-items-center">
+        <div class="position-absolute top-0 end-0 z-3 mt-5 me-5">
+            <a class="btn custom-btn text-white rounded rounded-5 px-4 py-2" href="index.html">Back</a>
+        </div>
+        <h1 class="h1">Register</h1>
+        <form method="post" class="container d-flex flex-column align-items-center justify-content-between mt-4">
+            <div class="row mb-4 w-100">
+                <div class="col">
+                    <input class="form-control" type="text" id="firstName" name="firstName" placeholder="First Name"
+                        required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="text" id="middleName" name="middleName" placeholder="Middle Name"
+                        required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="text" id="lastName" name="lastName" placeholder="Last Name"
+                        required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="text" id="suffix" name="suffix" placeholder="Suffix" required>
+                </div>
+            </div>
+            <div class="row mb-4 w-100">
+                <div class="col input-group">
+                    <span class="input-group-text">Birth Date:</span>
+                    <input class="form-control" type="date" id="birthDate" name="birthDate" placeholder="Birth Date"
+                        required>
+                </div>
+                <div class="col input-group">
+                    <select class="form-select">
+                        <option selected>Gender</option>
+                        <option value="Male">Male </option>
+                        <option value="Female">Female </option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-select">
+                        <option selected>Citizenship Status</option>
+                        <option value="Male">Filipino Citizen </option>
+                        <option value="Female">Dual Citizen </option>
+                    </select>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="text" maxlength="11" id="mobileNumber" name="mobileNumber"
+                        placeholder="Mobile Number" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                        <label class="form-check-label" for="terms">
+                            I agree to the <a href="#" class="text-blue-500 hover:underline">Terms and
+                                Conditions</a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn custom-btn text-white rounded rounded-3 w-25">Register</button>
+        </form>
+    </div>
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
