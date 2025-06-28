@@ -1,5 +1,16 @@
 @import 'node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .background-img {
     background-image: url('assets/home-background.jpg');
     background-size: cover;
@@ -46,4 +57,10 @@
     top: 1rem;
     left: 1rem;
     color: rgb(22, 5, 85);
+}
+
+.table-overflow {
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 30rem;
 }
