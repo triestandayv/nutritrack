@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link href="./bootstrap-5.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <div class="col-2 text-center pt-3 sidebar-bg">
+                <h1 class="h2 mb-auto">NutriTrack</h1>
+                <hr>
+                <nav class="nav nav-pills flex-column">
+                    <a href="dashboard.html" class="nav-link py-2 w-100">Dashboard</a>
+                    <a href="students.html" class="nav-link py-2 w-100">Students</a>
+                    <a href="inventory.html" class="nav-link py-2 w-100 active">Inventory</a>
+                    <a href="#" class="nav-link py-2 w-100">Settings</a>
+                </nav>
+            </div>
+            <div class="col-10 bg-info-subtle">
+                <div class="row">
+                    <nav class="py-1 nav justify-content-end align-items-center bg-white w-100">
+                        <div class="input-group self-align-center w-25">
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="button"><i class="bi bi-search"></i></button>
+                        </div>
+                        <a href="messages.html" class="nav-link"><i class="bi bi-chat-dots"></i></a>
+                        <a href="notifications.html" class="nav-link"><i class="bi bi-bell"></i></a>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle text-primary nav-link" type="button" id="profileDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle text-primary"></i>
+                            </button>
+                            <ul class="dropdown-menu text-end">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <hr>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="d-flex container pb-4 justify-content-between align-items-center">
+                            <h1 class="h3">Inventory</h1>
+                            <div>
+                                <a class="btn btn-outline-primary rounded rounded-5 px-3 py-2 me-2"
+                                    href="register.html"><i class="bi bi-plus-circle-fill me-2"></i> Stock In</a>
+                                <a class="btn btn-outline-primary rounded rounded-5 px-3 py-2 me-2"
+                                    href="register.html"><i class="bi bi-plus-circle-fill me-2"></i> Stock Out </a>
+                                <a class="btn btn-outline-primary rounded rounded-5 px-3 py-2"
+                                    href="inventory-history.html"><i class="bi bi-clock-history"></i> Logs </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center px-2 px-md-5">
+                        <div class="col-12">
+                            <div class="bg-light p-4 rounded-3 shadow-sm">
+                                <div
+                                    class="mb-3 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                                    <h5 class="mb-0">Overview</h5>
+                                    <div class="d-flex flex-column flex-md-row align-items-center gap-2">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search by name"
+                                                aria-label="Search by name">
+                                            <button class="btn btn-outline-primary" type="button"><i
+                                                    class="bi bi-search"></i></button>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown">
+                                                <i class="bi bi-filter"></i> Sort By
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Recently Added</a></li>
+                                                <li><a class="dropdown-item" href="#">A to Z</a></li>
+                                                <li><a class="dropdown-item" href="#">Z to A</a></li>
+                                                <li><a class="dropdown-item" href="#">Lowest Current Stocks</a></li>
+                                                <li><a class="dropdown-item" href="#">Highest Current Stocks</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive table-overflow">
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Item Name</th>
+                                                <th scope="col">Unit</th>
+                                                <th scope="col">Total In</th>
+                                                <th scope="col">Total Out</th>
+                                                <th scope="col">Current Stock</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Rice</td>
+                                                <td>Kilograms</td>
+                                                <td>500</td>
+                                                <td>300</td>
+                                                <td>180</td>
+                                                <td class="text-center"><a href="#"
+                                                        class="btn btn-outline-primary btn-sm w-100"><i
+                                                            class="bi bi-eye-fill"></i> View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Bear Brand Milk</td>
+                                                <td>Liters</td>
+                                                <td>200</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                                <td class="text-center"><a href="#"
+                                                        class="btn btn-outline-primary btn-sm w-100"><i
+                                                            class="bi bi-eye-fill"></i> View</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <script src=" bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js">
+                </script>
+            </div>
+        </div>
+</body>
+
+</html>
