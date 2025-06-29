@@ -12,14 +12,39 @@
 <body>
     <div class="container-fluid vh-100">
         <div class="row h-100">
-            <div class="col-2 text-center pt-3 sidebar-bg">
+            <div class="col-2 text-center pt-3 sidebar-bg overflow-hidden">
                 <h1 class="h2 mb-auto">NutriTrack</h1>
                 <hr>
-                <nav class="nav nav-pills flex-column">
-                    <a href="dashboard.html" class="nav-link py-2 w-100 active">Dashboard</a>
-                    <a href="students.html" class="nav-link py-2 w-100">Students</a>
-                    <a href="inventory.html" class="nav-link py-2 w-100">Inventory</a>
-                    <a href="#" class="nav-link py-2 w-100">Settings</a>
+                <nav class="nav nav-pills flex-column fs-5 text-start">
+                    <a href="dashboard.html" class="nav-link py-4 w-100 active">
+                        <i class="bi bi-grid-fill me-2 sidebar-icon"></i>
+                        Dashboard</a>
+                    <div class="list-group">
+                        <a class="listgroup-link nav-link list-group-item list-group-item-action bg-success border-0 text-light py-4 w-100"
+                            data-bs-toggle="collapse" href="#mealsMenu" role="button" aria-expanded="false"
+                            aria-controls="mealsMenu">
+                            <i class="bi bi-mortarboard-fill me-2 sidebar-icon"></i>Students </a>
+                        <div class="collapse" id="mealsMenu">
+                            <a href="students.html"
+                                class="list-group-item list-group-item-action ps-5 bg-success border-0 text-light nav-link fs-6">
+                                <i class="bi bi-person-lines-fill me-2 sidebar-icon"></i> List of Students</a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action ps-5 bg-success border-0 text-light nav-link fs-6">
+                                <i class="bi bi-person-fill-add me-2 sidebar-icon"></i>Add Student</a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action ps-5 bg-success border-0 text-light nav-link fs-6">
+                                <i class="bi bi-list-check me-2 sidebar-icon"></i> Attendance</a>
+                        </div>
+                    </div>
+                    <a href="students.html" class="nav-link py-4 w-100">
+                        <i class="bi bi-fork-knife me-2 sidebar-icon"></i>Meals</a>
+                    <a href="inventory.html" class="nav-link py-4 w-100">
+                        <i class="bi bi-box-seam-fill me-2 sidebar-icon"></i>Inventory</a>
+                    <a href="#" class="nav-link py-4 w-100">
+                        <i class="bi bi-gear-fill me-2 sidebar-icon"></i>Settings</a>
+                    <hr>
+                    <a href="#" class="nav-link py-4 w-100">
+                        <i class="bi bi-box-arrow-right me-2 sidebar-icon"></i>Log Out</a>
                 </nav>
             </div>
             <div class="col-10 bg-info-subtle">
@@ -48,27 +73,60 @@
                     </nav>
                     <hr>
                 </div>
-                <div class="row mb-4">
-                    <div class="col-12 d-flex gap-4 justify-content-around flex-column flex-lg-row">
-                        <div
-                            class="custom-card card rounded rounded-0 shadow-sm border-0 border-top border-primary border-3">
-                            <div class="card-body">
-                                <h1 class="card-title">150</h1>
-                                <h6 class="card-subtitle mt-3 text-body-secondary">enrolled students</h6>
+                <div class="row mb-3">
+                    <div class="col-12 d-flex gap-3 justify-content-around flex-column flex-lg-row">
+                        <div class="custom-card card rounded rounded-0 shadow-sm border-primary border-2">
+                            <div class="row g-0 text-bg-primary">
+                                <div class="col-6 text-center">
+                                    <i class="bi bi-mortarboard-fill w-100 card-icon"></i>
+                                </div>
+                                <div class="col-6 text-start mt-3">
+                                    <div class="card-body">
+                                        <h1 class="card-title">150</h1>
+                                        <h6 class="card-subtitle mt-2">Enrolled Students</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-3">
+                                <div class="col-12 text-center">
+                                    <a href="" target="_blank" class="card-link text-primary btn">View Details</a>
+                                </div>
                             </div>
                         </div>
-                        <div
-                            class="custom-card card rounded rounded-0 shadow-sm border-0 border-top border-warning border-3">
-                            <div class="card-body">
-                                <h1 class="card-title">20</h1>
-                                <h6 class="card-subtitle mt-3 text-body-secondary">in danger of being underweight</h6>
+                        <div class="custom-card card rounded rounded-0 shadow-sm border-warning border-2">
+                            <div class="row g-0 text-bg-warning">
+                                <div class="col-6 text-center">
+                                    <i class="bi bi-exclamation-triangle-fill card-icon"></i>
+                                </div>
+                                <div class="col-6 text-start mt-3">
+                                    <div class="card-body">
+                                        <h1 class="card-title">70</h1>
+                                        <h6 class="card-subtitle mt-2">At Risk Students</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-3">
+                                <div class="col-12 text-center">
+                                    <a href="" target="_blank" class="card-link text-warning btn">View Details</a>
+                                </div>
                             </div>
                         </div>
-                        <div
-                            class="custom-card card rounded rounded-0 shadow-sm border-0 border-top border-success border-3">
-                            <div class="card-body">
-                                <h1 class="card-title">100</h1>
-                                <h6 class="card-subtitle mt-3 text-body-secondary">students with normal BMI</h6>
+                        <div class="custom-card card rounded rounded-0 shadow-sm border-success border-2">
+                            <div class="row g-0 text-bg-success">
+                                <div class="col-6 text-center">
+                                    <i class="bi bi-emoji-smile-fill card-icon"></i>
+                                </div>
+                                <div class="col-6 text-start mt-3">
+                                    <div class="card-body">
+                                        <h1 class="card-title">130</h1>
+                                        <h6 class="card-subtitle mt-2">Normal Students</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-3">
+                                <div class="col-12 text-center">
+                                    <a href="" target="_blank" class="card-link text-success btn">View Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
