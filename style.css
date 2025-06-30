@@ -12,20 +12,46 @@ body {
 }
 
 .background-img {
-    background-image: url('assets/home-background.jpg');
+    background-image: url('assets/bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100dvh;
-    color: #0d6efd;
 }
 
 .custom-btn {
-    background-color: #0d6efd;
+    color: white;
+    transition: transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .custom-btn:hover {
-    background-color: #198754;
+    color: white;
+    transform: scale(1.03);
+}
+
+.custom-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #1bd471;
+    transition: all 0.3s ease;
+    z-index: -1;
+    border-radius: 12rem;
+}
+
+.custom-btn:hover::after {
+    width: 100%;
+    background-color: #1bd471;
+}
+
+.slogan {
+    font-size: 5rem;
 }
 
 .sidebar-bg {

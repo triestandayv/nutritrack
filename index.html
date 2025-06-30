@@ -7,18 +7,27 @@
     <title>NutriTrack</title>
     <link href="./bootstrap-5.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 
-<body>
-    <header class="background-img w-100 d-flex flex-column justify-content-center gap-4 align-items-center">
-        <h1 class="display-3 fw-bold">NutriTrack</h1>
-        <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nobis!</p>
-        <div
-            class="container d-flex flex-column flex-md-row justify-content-center align-items-center text-center gap-3">
-            <a class="custom-btn btn text-white rounded rounded-5 px-4 py-2 w-25" href="login.html">Log In</a>
-            <a class=" custom-btn btn text-white rounded rounded-5 px-4 py-2 w-25" href="register.html">Register</a>
+<body class="background-img text-light">
+    <div class="container-fluid p-5 d-flex flex-column align-items-start vh-100">
+        <img src="assets/logo.png" alt="NutriTrack Logo" class="img-fluid mb-4" style="max-width: 12rem;">
+        <div class="flex-grow-1 d-flex flex-column justify-content-center">
+            <h2 class="slogan">Track Growth, <br>Nourish Futures</h2>
+            <button
+                class="btn btn-primary custom-btn text-light rounded rounded-5 px-5 py-3 shadow get-started-btn mt-4 w-50">Get
+                Started</button>
+            <div class="container d-flex flex-column flex-md-row align-items-center gap-3 login-register d-none mt-4">
+                <a class="custom-btn btn btn-primary text-light rounded rounded-5 px-4 py-2 w-50 shadow"
+                    href="login.html">Log
+                    In</a>
+                <!-- <a class=" custom-btn btn btn-primary text-light rounded rounded-5 px-4 py-2 w-50 shadow"
+                    href="register.html">Register</a> -->
+            </div>
         </div>
-    </header>
+    </div>
+
     <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

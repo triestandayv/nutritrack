@@ -10,25 +10,37 @@
 </head>
 
 <body>
-    <div class="position-relative background-img w-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="position-relative background-img w-100 d-flex justify-content-center align-items-center">
         <div class="position-absolute top-0 end-0 z-3 mt-5 me-5">
-            <a class="btn custom-btn text-white rounded rounded-5 px-4 py-2" href="index.html">Back</a>
+            <a class="btn btn-primary custom-btn text-white rounded rounded-5 px-4 py-2" href="index.html">Back</a>
         </div>
-        <h1 class="h1">Log In</h1>
-        <form method="post" action="dashboard.html"
-            class="d-flex flex-column align-items-center justify-content-between gap-4 mt-4">
-            <div class="input-group">
-                <span class="input-group-text"><i class="bi bi-person"></i></span>
-                <input class="form-control" type="text" id="username" name="username" placeholder="Enter Username"
-                    required>
-            </div>
-            <div class="input-group">
-                <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                <input class="form-control" type="password" id="password" name="password" placeholder="Enter Password"
-                    required>
-            </div>
-            <button type="submit" class="btn custom-btn text-white w-100">Log In</button>
-        </form>
+        <div
+            class="container d-flex flex-column align-items-center justify-content-center gap-4 bg-light w-25 p-5 rounded rounded-5 shadow">
+            <h1 class="h1 text-primary display-6">Log In</h1>
+            <form method="post" action="dashboard.html"
+                class="d-flex flex-column align-items-center justify-content-between gap-4 mt-4">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input class="form-control" type="text" id="username" name="username" placeholder="Enter Username"
+                        required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    <input class="form-control" type="password" id="password" name="password"
+                        placeholder="Enter Password" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person-badge"></i></span>
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option selected>Select Role</option>
+                        <option value="tl">Teacher</option>
+                    </select>
+                </div>
+                <button type="submit"
+                    class="btn btn-primary custom-btn text-light rounded rounded-5 py-3 shadow w-100">Log
+                    In</button>
+            </form>
+        </div>
     </div>
     <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 </body>
